@@ -1,32 +1,32 @@
 # ngX Starter Kit
 
-Web project starter kit including modern tools and workflow based on
-[angular-cli](https://github.com/angular/angular-cli), best practices from the community, a scalable base template and
-a good learning base.
+Web project starter kit incluindo ferramentas modernas e fluxo de trabalho baseado em
+[angular-cli](https://github.com/angular/angular-cli), melhores práticas da comunidade, um modelo base escalável e
+uma boa base de aprendizado.
 
-Generated using [ngX-Rocket](https://github.com/ngx-rocket/generator-ngx-rocket).
+Gerado usando [ngX-Rocket](https://github.com/ngx-rocket/generator-ngx-rocket).
 
-### Benefits
+### Beneficios
 
-- Quickstart a project in seconds and focus on features, not on frameworks or tools
+- Inicie um projeto rapidamente em segundos e concentre-se em recursos, não em estruturas ou ferramentas
 
-- Industrial-grade tools, ready for usage in a continuous integration environment and DevOps
+- Ferramentas de nível industrial, prontas para uso em um ambiente de integração contínua e DevOps
 
-- Scalable architecture with base app template including example components, services and tests
+- Arquitetura escalável com modelo de aplicativo básico, incluindo componentes, serviços e testes de exemplo
 
-# Getting started
+# Começando
 
-1. Go to project folder and install dependencies:
+1. Vá para a pasta do projeto e instale as dependências:
  ```bash
  npm install
  ```
  
-2. Launch development server, and open `localhost:4200` in your browser:
+2. Inicie o servidor de desenvolvimento e abra `localhost:4200` no seu browser:
  ```bash
  npm start
  ```
  
-# Project structure
+# Estrutura do Projeto
 
 ```
 dist/                        compiled version
@@ -52,9 +52,9 @@ reports/                     test and coverage reports
 proxy.conf.js                backend proxy configuration
 ```
 
-# Main tasks
+# Principais tarefas
 
-Task automation is based on [NPM scripts](https://docs.npmjs.com/misc/scripts).
+A automação de tarefas é baseada em [NPM scripts](https://docs.npmjs.com/misc/scripts).
 
 Tasks                         | Description
 ------------------------------|---------------------------------------------------------------------------------------
@@ -67,51 +67,55 @@ npm run lint                  | Lint code
 npm run translations:extract  | Extract strings from code and templates to `src/app/translations/template.json`
 npm run docs                  | Display project documentation
 
-When building the application, you can specify the target environment using the additional flag `--env <name>` (do not
-forget to prepend `--` to pass arguments to npm scripts).
+Ao construir o aplicativo, você pode especificar o ambiente de destino usando a flag `--env <name>` 
+(não esqueça de `--` para passar argumentos para npm scripts).
 
-The default build environment is `prod`.
+O ambiente de compilação padrão é `prod`.
 
-## Development server
+## Servidor de desenvolvimento
 
-Run `npm start` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change
-any of the source files.
-You should not use `ng serve` directly, as it does not use the backend proxy configuration by default.
+Execute `npm start` para um ambiente dev server. Navegar com `http://localhost:4200/`. 
+O aplicativo será recarregado automaticamente se você alterar qualquer um dos arquivos de origem.
+Você não deve usar `ng serve` diretamente, pois não usa a configuração de proxy de back-end por padrão.
 
 ## Code scaffolding
 
-Run `npm run generate -- component <name>` to generate a new component. You can also use
-`npm run generate -- directive|pipe|service|class|module`.
+Execute `npm run generate -- component <name>` para gerar um novo componente. 
+Você também pode usar `npm run generate -- directive|pipe|service|class|module`.
 
-If you have installed [angular-cli](https://github.com/angular/angular-cli) globally with `npm install -g @angular/cli`,
-you can also use the command `ng generate` directly.
+Se você instalou [angular-cli](https://github.com/angular/angular-cli) globalmente com `npm install -g @angular/cli`,
+você também pode usar o comando `ng generate` diretamente.
 
 ## Additional tools
 
-Tasks are mostly based on the `angular-cli` tool. Use `ng help` to get more help or go check out the
+As tarefas baseiam-se principalmente na ferramenta `angular-cli`. Use `ng help` para obter mais ajuda ou vá para o
 [Angular-CLI README](https://github.com/angular/angular-cli).
 
 # What's in the box
 
-The app template is based on [HTML5](http://whatwg.org/html), [TypeScript](http://www.typescriptlang.org) and
-[Sass](http://sass-lang.com). The translation files use the common [JSON](http://www.json.org) format.
+O modelo de aplicativo é baseado em 
+[HTML5](http://whatwg.org/html), 
+[TypeScript](http://www.typescriptlang.org) and
+[Sass](http://sass-lang.com). 
+Os arquivos de tradução usam o formato comum [JSON](http://www.json.org).
 
 #### Tools
 
-Development, build and quality processes are based on [angular-cli](https://github.com/angular/angular-cli) and
-[NPM scripts](https://docs.npmjs.com/misc/scripts), which includes:
+Os processos de desenvolvimento, construção e qualidade são baseados em 
+[angular-cli](https://github.com/angular/angular-cli) and
+[NPM scripts](https://docs.npmjs.com/misc/scripts), que incluem:
 
-- Optimized build and bundling process with [Webpack](https://webpack.github.io)
-- [Development server](https://webpack.github.io/docs/webpack-dev-server.html) with backend proxy and live reload
-- Cross-browser CSS with [autoprefixer](https://github.com/postcss/autoprefixer) and
+- Processo de compilação e agrupamento otimizado com [Webpack](https://webpack.github.io)
+- [Development server](https://webpack.github.io/docs/webpack-dev-server.html) com proxy de back-end e live reload
+- Cross-browser CSS com [autoprefixer](https://github.com/postcss/autoprefixer) e
   [browserslist](https://github.com/ai/browserslist)
-- Asset revisioning for [better cache management](https://webpack.github.io/docs/long-term-caching.html)
-- Unit tests using [Jasmine](http://jasmine.github.io) and [Karma](https://karma-runner.github.io)
-- End-to-end tests using [Protractor](https://github.com/angular/protractor)
+- Asset revisioning para [better cache management](https://webpack.github.io/docs/long-term-caching.html)
+- Unit tests usando [Jasmine](http://jasmine.github.io) e [Karma](https://karma-runner.github.io)
+- End-to-end tests usando [Protractor](https://github.com/angular/protractor)
 - Static code analysis: [TSLint](https://github.com/palantir/tslint), [Codelyzer](https://github.com/mgechev/codelyzer),
-  [Stylelint](http://stylelint.io) and [HTMLHint](http://htmlhint.com/)
-- Local knowledgebase server using [Hads](https://github.com/sinedied/hads)
-- Automatic code formatting with [Prettier](https://prettier.io)
+  [Stylelint](http://stylelint.io) e [HTMLHint](http://htmlhint.com/)
+- Local knowledgebase server usando [Hads](https://github.com/sinedied/hads)
+- Automatic code formatting com [Prettier](https://prettier.io)
 
 #### Libraries
 
